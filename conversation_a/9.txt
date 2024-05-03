@@ -1,0 +1,9 @@
+User
+I think it worked, but the legend takes up way more space than the actual plot because the filepaths are so long. Please make it so that the group IDs shown in the legend are shortened like so:
+
+Only the cell type and substrate are displayed. "collagen I" is abbreviated to "COLI". "fibronectin" is abbreviated to "FN1".
+ChatGPT
+
+Sure, I'll update the code to abbreviate the group IDs in the legend. Here's the modified version:
+[code version 9]
+This code should abbreviate the group IDs in the legend as requested. Let me know if it works for you!

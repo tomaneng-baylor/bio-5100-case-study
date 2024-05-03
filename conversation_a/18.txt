@@ -1,0 +1,8 @@
+User
+The same error was thrown, unfortunately. I think the issue is that the object sgCntrl is not defined before the calculation is attempted.
+ChatGPT
+
+You're right; sgCntrl is not defined as a variable in the data frame. We need to adjust the calculation to handle the case where sgCntrl is not present in a cluster. Let me correct that:
+[code version 18]
+By using backticks (), we can explicitly reference the sgCntrlcolumn in the data frame. This way, even ifsgCntrl` is not present in a cluster, it won't throw an error. Let me know if this works for you!
+

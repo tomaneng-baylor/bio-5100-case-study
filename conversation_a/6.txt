@@ -1,0 +1,10 @@
+Ah, sorry. The data example I originally gave you was from when I was viewing it in LibreOffice. Here's a couple lines straight from a data file: 
+# b'"cell id","p-S6","PD-L1","Mcl1","Vim","NF\xce\xbaBp65","p-Akt","E-Cad","Bim","p-Rb","FOXO1A","p-Stat3","SOX2","p-\xc9\xa3H2AX","Ki67","PCNA","group id"'
+"0001-0009",1.9239125802947985,1.2414324982383231,-0.05162593570328777,1.942928343732408,1.0055675757374303,0.06451143334709997,0.004975462858044288,0.8406068364766224,2.7815874744942306,2.696807093447756,2.866828366353664,1.8564836168323922,1.2436569710900969,3.1946143509042972,2.0216511543946947,3
+ChatGPT
+
+Got it, thank you for providing the actual data format. Let's adjust the code accordingly:
+[code version 6]
+This code assumes that your data is comma-separated. If it's tab-separated, you can use read.delim() instead of read.csv() as we did before.
+
+Let me know if this works for you!

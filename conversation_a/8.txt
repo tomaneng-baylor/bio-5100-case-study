@@ -1,0 +1,7 @@
+User
+Before I run that, I should note that each of those files is in a directory called "data". Please account for that.
+ChatGPT
+
+Sure, I'll update the code to include the directory name. Here's the modified version:
+[code version 8]
+This code should now correctly read the data files from the "data" directory. Let me know if you encounter any issues!

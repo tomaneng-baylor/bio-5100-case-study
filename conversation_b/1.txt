@@ -1,0 +1,53 @@
+User
+Please answer my prompts as a researcher who is competent in bioinformatics and experienced with clustering and dimensionality reduction techniques.
+ChatGPT
+
+Of course, I'm here to help with your bioinformatics questions. What do you need assistance with?
+User
+I'll describe what's been done so far and the data I'm working with first. In my following messages, I'll specify the help I'd like from you.
+
+Experiment description:
+Three types of pancreatic cancer cells, which were each derived from one parental pancreatic cancer cell line, were fixed onto a well plate and stained for a variety of different proteins of interest using fluorophore-conjugated antibodies. Cyclic immunofluorescence was used to get images of cells stained with a total of 15 different antibodies. Signal intensity was then calculated per cell for each antibody based on those images. 
+
+Data transformations done:
+All values of zero within the data were replaced with one. Then, the base 2 logarithm of each value was calculated. The resulting log2 output was then centered around the median by subtracting the median log2 value from everything.
+
+Data format:
+# b'"cell id","p-S6","PD-L1","Mcl1","Vim","NF\xce\xbaBp65","p-Akt","E-Cad","Bim","p-Rb","FOXO1A","p-Stat3","SOX2","p-\xc9\xa3H2AX","Ki67","PCNA","group id"'
+"0001-0006",0.2250583144817515,-0.3264849976299473,-1.7015854235390915,0.9330091013544273,-0.004394919604328251,-2.054578050785227,-0.918648462075141,0.34320145630462306,-3.6439422411967675,0.23845533943613262,1.3762145439485156,-0.6383193223596688,-0.3407693238993108,0.8422502791441353,-0.5336050006327877,2
+"0002-0004",-2.4695947109544827,-3.3500666066757754,-1.9603061696548814,-2.3885199298325217,-3.7486088275701537,-2.413609898423517,-4.294524320645432,-0.8981037734359241,-0.7100177431675698,-1.3897108120445765,-0.5436245119485488,-8.561687092229677,-2.2061976781644104,-1.5912509539958695,-8.561687092229677,2
+
+File names:
+sgCntrl collagen I_normalized.csv
+sgCntrl fibronectin_normalized.csv
+sgCntrl plastic_normalized.csv
+sgRAI14(3)-6 collagen I_normalized.csv
+sgRAI14(3)-6 fibronectin_normalized.csv
+sgRAI14(3)-6 plastic_normalized.csv
+sgRAI14(3) collagen I_normalized.csv
+sgRAI14(3) fibronectin_normalized.csv
+sgRAI14(3) plastic_normalized.csv
+
+Would you like any clarification before we continue?
+ChatGPT
+
+Thanks for providing such detailed information. It seems you've already preprocessed your data, and you have three different types of pancreatic cancer cells, each with 15 different protein markers.
+
+Could you please specify what kind of analysis or help you need with this data? Are you looking for clustering these cells based on their protein expression profiles, or perhaps performing dimensionality reduction to visualize the data? Let me know how I can assist you further.
+User
+You're spot on! I'm working in R studio. I'd like an R script that does the following:
+
+- Perform t-distributed stochasic neighbor embedding on these data.
+- Use ggplot2 to plot the dimensionality reduction results, mapping color to the groups of cells corresponding to each file..
+- Make sure the legend doesn't take up too much space by abbreviating the name of each group: for example, the color corresponding to "sgCntrl collagen I_normalized.csv" should be labelled "sgCntrl COL1".
+- Save the t-SNE plot to a PNG file.
+- Perform k-means clustering on the same data.
+- Compute the proportion of sgCntrl cells within each cluster compared to the total number of cells in each cluster.
+- Rank the clusters in order of highest sgCntrl content to lowest.
+- Call ggplot again, mapping color to cluster ID this time.
+- Save the second t-SNE plot to another PNG file.
+ChatGPT
+
+Sure, here is an R script that performs t-SNE dimensionality reduction, k-means clustering, and generates the required plots:
+[code version 1]
+This script should perform t-SNE dimensionality reduction, k-means clustering, and generate the required plots according to your specifications. Let me know if you need further assistance!

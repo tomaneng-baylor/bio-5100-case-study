@@ -1,0 +1,6 @@
+The error has not been resolved still, so I ran through the code line by line. The first sign that something is wrong appears when I view the data in Rstudio as it appears after running line 6. Everything's in one column. Are you using the correct parameters for reading in the data?
+ChatGPT
+
+Apologies for the oversight. It seems like I didn't set the correct separator for reading the data. Let me correct that for you:
+[code version 5]
+This time, I added sep = "\t" to read.delim() function to specify that the data is tab-separated. Let me know if this resolves the issue!

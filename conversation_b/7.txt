@@ -1,0 +1,7 @@
+User
+Unfortunately, this didn't resolve the error. I should not that I was one line off before; the code failed on line 31.
+ChatGPT
+
+I see the issue now. The problem arises because the tsne_result$Y matrix has fewer rows than the original data due to the removal of metadata columns and the cell id column. We need to adjust the grouping accordingly. Here's the corrected script:
+[code version 7]
+Please replace "path_to_your_directory/data" with the actual path to your directory containing the CSV files. Let me know if it works for you!

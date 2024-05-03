@@ -1,0 +1,13 @@
+User
+OK. Here's the error I mentioned, since it showed up again:
+Error in `geom_point()` at PhD_classes/5100/iteration_current.R:68:1:
+! Problem while computing aesthetics.
+ℹ Error occurred in the 1st layer.
+Caused by error:
+! object 'group_id' not found
+Run `rlang::last_trace()` to see where the error occurred
+ChatGPT
+
+Apologies for the oversight. It seems I forgot to rename the group_id variable to group_id in the ggplot() call. Let me correct that:
+[code version 12]
+This should fix the error. Let me know if it works now!

@@ -1,0 +1,10 @@
+User
+Thanks, that worked better. Unfortunately, the new script throws an error on line 30:
+
+Error in `$<-.data.frame`(`*tmp*`, group, value = c("sgCntrl collagen I_normalized.csv",  : 
+  replacement has 15804 rows, data has 15808
+ChatGPT
+
+I see the issue. It seems that the number of rows in the tsne_df dataframe does not match the number of rows in the original data. This is likely due to the removal of metadata columns and the cell id column. Let me correct this for you. Here's the revised script:
+[code version 6]
+Please replace "path_to_your_directory/data" with the actual path to your directory containing the CSV files. Let me know if it works for you!

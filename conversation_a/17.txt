@@ -1,0 +1,12 @@
+User
+Got it. Upon closer inspection, it looks like the last line just calls ggplot a second time with the same parameters, so I'm excluding it. Anyway, before the script gets to the first ggplot call, it throws this error:
+Error in `mutate()`:
+ℹ In argument: `sgCntrl_prop = sgCntrl/total`.
+Caused by error:
+! object 'sgCntrl' not found
+Run `rlang::last_trace()` to see where the error occurred.
+ChatGPT
+
+It seems I forgot to account for the case where there are no sgCntrl cells in a cluster. Let me fix that for you:
+[code version 17]
+This should fix the error. Let me know if it works now!

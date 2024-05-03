@@ -1,0 +1,20 @@
+User
+Beautiful! I'm going to give you some more information so you can extend this code to be more useful for my analysis. Let's start with the file names: 
+sgCntrl collagen I_normalized.csv
+sgCntrl fibronectin_normalized.csv
+sgCntrl plastic_normalized.csv
+sgRAI14(3)-6 collagen I_normalized.csv
+sgRAI14(3)-6 fibronectin_normalized.csv
+sgRAI14(3)-6 plastic_normalized.csv
+sgRAI14(3) collagen I_normalized.csv
+sgRAI14(3) fibronectin_normalized.csv
+sgRAI14(3) plastic_normalized.csv
+
+The first word in each file name, beginning with sg, represents a derivative of the PANC1 pancreatic cancer cell line. This is followed by the substrate on which the cells were grown: "plastic" for uncoated wells, "fibronectin" for wells coated in the ECM protein fibronectin, and "collagen I" for wells coated in type I collagen. Would you like any clarification on this?
+ChatGPT
+
+Thank you for providing the additional information. I'll update the code to include file names and group IDs based on the information you provided.
+[code version 7]
+This code will read all the data files, preprocess them, and combine them into a single data frame. The t-SNE visualization will show different cell groups colored according to the substrate on which they were grown.
+
+Let me know if you need further assistance!

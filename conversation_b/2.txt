@@ -1,0 +1,7 @@
+User
+Before I run that, please note that the way the groups are labelled does not distinguish between sgRAI14(3) and sgRAI14(3)-6.
+ChatGPT
+
+Got it. Let me update the script to differentiate between "sgRAI14(3)" and "sgRAI14(3)-6" in the group labels. Here's the revised script:
+[code version 2]
+This script should now correctly label the group names distinguishing between "sgRAI14(3)" and "sgRAI14(3)-6". Let me know if you need further assistance!

@@ -1,0 +1,7 @@
+User
+Looks great! Now, within each cluster, I'd like to compute the proportion of sgCntrl cells relative to all the cells in that cluster and store the results in a data frame to view. After that, I'd like the clusters to be ranked from highest sgCntrl proportion to lowest.
+ChatGPT
+
+Sure, we can do that. Here's how you can compute the proportion of sgCntrl cells within each cluster and then rank the clusters based on the proportion of sgCntrl cells:
+[code version 14]
+This code will compute the proportion of sgCntrl cells within each cluster, store the results in a data frame, and then rank the clusters from highest sgCntrl proportion to lowest. Let me know if it works for you!

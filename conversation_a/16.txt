@@ -1,0 +1,14 @@
+User
+OK, the last line in that snippet looks a bit odd to me (it's just the letter "p"), so I chose to append the code myself. Appending the second-to-last code snipppet you sent me and rerunning the whole script threw the following error:
+Error in `mutate()`:
+ℹ In argument: `total = rowSums(select(.,
+  -cluster))`.
+ℹ In group 1: `cluster = 1`.
+Caused by error:
+! `total` must be size 1, not 3.
+Run `rlang::last_trace()` to see where the error occurred.
+ChatGPT
+
+My apologies for the oversight. It seems there was an issue with the total calculation. We need to calculate the total count of cells within each cluster, so we should sum across all groups, not just for each individual group. Let me correct that for you:
+[code version 16]
+This should fix the error you encountered. Let me know if it works now!

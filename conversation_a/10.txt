@@ -1,0 +1,17 @@
+The plot's much more visible now, but the legend looks like this:
+COLI
+FNI
+plastic
+NA
+NA
+NA
+NA
+NA
+NA
+
+Did you account for the name of the PANC1 derivatives?
+ChatGPT
+
+My apologies for the oversight. Let me correct that:
+[code version 10]
+This should correctly abbreviate the group IDs in the legend. Let me know if it works now!

@@ -1,0 +1,7 @@
+User
+Please take into account that the csv files are stored in a directory named "data".
+ChatGPT
+
+Sure, I'll update the script to include the directory name "data" where the CSV files are stored. Here's the revised script:
+[code version 3]
+Make sure to replace "path_to_your_directory/data" with the actual path to your directory containing the CSV files. Let me know if you need further assistance!

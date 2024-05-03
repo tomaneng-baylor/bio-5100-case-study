@@ -1,0 +1,7 @@
+User
+OK, so the code throws an error now. I'll paste in the error below, but before I do, it looks like your vector of labels still only has three labels in it and there are also no cell line names in there. Could you take the second-to-last script you sent me and edit it so that the label vector is generated using one or more regular expressions, accounting for both cell line (for example, "sgCntrl") and substrate?
+ChatGPT
+
+Apologies for the oversight. Let me correct that and generate the label vector using regular expressions to account for both cell line and substrate. Here's the updated code:
+[code version 11]
+This should correctly abbreviate the group IDs in the legend. Let me know if it works now!

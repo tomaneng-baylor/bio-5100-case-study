@@ -1,0 +1,7 @@
+User
+I tried this code and the same error was thrown; could you make sure the first column, which specifies cell id, is not included in the dimensionality reduction either?'
+ChatGPT
+
+Sure, I'll make sure to exclude the first column (cell id) from the dimensionality reduction. Here's the corrected script:
+[code version 5]
+This script should correctly exclude the "cell id" column from the dimensionality reduction. Make sure to replace "path_to_your_directory/data" with the actual path to your directory containing the CSV files. Let me know if you need further assistance!
